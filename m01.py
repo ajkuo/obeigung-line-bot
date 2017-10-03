@@ -3,9 +3,7 @@ import requests
 import json
 import datetime
 from bs4 import BeautifulSoup
-from linebot import (
-    LineBotApi, WebhookHandler
-)
+from linebot import LineBotApi
 from linebot.models import TextSendMessage
 import config
 
@@ -14,10 +12,8 @@ import config
 
 BOT_ACCESS_TOKEN = config.BOT_ACCESS_TOKEN
 BOT_OWNER_ID = config.BOT_OWNER_ID
-BOT_SECRET = config.BOT_SECRET
 
 line_bot_api = LineBotApi(BOT_ACCESS_TOKEN)
-handler = WebhookHandler(BOT_SECRET)
 
 
 def get_mobile01_posts():
