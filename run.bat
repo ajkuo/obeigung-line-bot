@@ -1,1 +1,1 @@
-py C:\Obeigung-line-bot\m01.py
+py m01.py
